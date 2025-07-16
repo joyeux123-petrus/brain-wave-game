@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top right, #2a2a2a, #1a1a1a);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .game-container {
+    width: 95% !important;
+    padding: 20px !important;
+  }
+
+  .question-text {
+    font-size: 1.2rem !important;
+  }
+
+  .answer-buttons button {
+    padding: 12px !important;
+    font-size: 1rem !important;
+  }
+
+  .modal-content {
+    width: 90% !important;
+  }
+
+  .score-timer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+/* Intro Screen */
+.intro-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.intro-screen h1 {
+  font-size: 2.5rem;
+  color: #00ff00;
+}
+
+.intro-screen p {
+  font-size: 1.2rem;
+  color: #aaffaa;
+}
+
+button {
+  padding: 15px 25px;
+  background: linear-gradient(145deg, #008800, #00ff00);
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00ff00;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #00ff00, #008800);
+}
+
+/* Grade Selection */
+.grade-selection {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Game Container */
+.game-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #00ff00;
+  width:
